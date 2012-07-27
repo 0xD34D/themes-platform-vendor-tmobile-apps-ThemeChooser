@@ -215,10 +215,10 @@ public class ThemeChooser extends Activity {
                 showDialog(DIALOG_MISSING_HOST_DENSITY);
                 return;
             }
-            if (!item.hasThemePackageScope()) {
-                showDialog(DIALOG_MISSING_THEME_PACKAGE_SCOPE);
-                return;
-            }
+//            if (!item.hasThemePackageScope()) {
+//                showDialog(DIALOG_MISSING_THEME_PACKAGE_SCOPE);
+//                return;
+//            }
             if (Intent.ACTION_PICK.equals(getIntent().getAction())) {
                 Intent i = new Intent(null, item.getUri(ThemeChooser.this));
                 setResult(Activity.RESULT_OK, i);
